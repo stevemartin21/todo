@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en" class="full-height">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design Bootstrap</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+
+
+<body class="software-lp">
+
+    <!--Main Navigation-->
+    <header>
+
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="#"><strong>GSD</strong></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Get Stuff Done <span class="sr-only">(current)</span></a>
+                        </li>
+                        
+                         <li class="nav-item ">
+                            <a class="nav-link" href="#begin">Go to the App</a>
+                        </li>
+                       
+                    </ul>
+                    <ul class="navbar-nav ml-auto nav-flex-icons">
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-light"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-light"><i class="fa fa-google-plus"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-light"><i class="fa fa-facebook"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--Intro Section-->
+        <section class="view intro-2 hm-gradient">
+            <div class="full-bg-img">
+                <div class="container flex-center">
+                    <div class="row flex-center pt-5 mt-3">
+                        <div class="col-md-12 col-lg-6 text-center text-md-left margins">
+                            <div class="white-text">
+                                <h1 class="h1-responsive font-bold wow fadeInLeft" data-wow-delay="0.3s">Ultimate Get Stuff Done App</h1>
+                                <hr class="hr-light wow fadeInLeft" data-wow-delay="0.3s">
+                                <h6 class="wow fadeInLeft" data-wow-delay="0.3s">Use this productivity tool to finally get your to do list ton.  Built to optimize your time and help you get the most done in the least amount of time.
+                                </h6>
+                                <br>
+                               
+                                <a class="btn btn-outline-white btn-rounded font-bold wow fadeInLeft" href="#begin"  data-wow-delay="0.3s">Learn more 
+                                    </a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 col-lg-6  wow fadeInRight d-flex justify-content-center" data-wow-delay="0.3s" id="mainImg">
+                            <img src="img/todo.jpg" alt="" class="img-fluid"  >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </header>
+    <!--Main Navigation-->
+
+    <!--Main content-->
+    <main>
+
+<!--Section: Features v.1-->
+<section class="text-center">
+
+    <!--Section heading-->
+    <h1 class="py-5 font-weight-bold">This App Will Change Your Life</h1>
+    <!--Section description-->
+    <p class="px-5 mb-5 pb-3 lead grey-text">Are you tired of not getting stuff done?  This app will help you get more stuff done, in a faster time, and have fun doing it.</p>
+    <div id="begin"></div>
+
+    <!--Grid row-->
+    <div class="row">
+
+    <!--Grid column-->
+    <div class="col-md-4">
+        <i class="fa fa-area-chart fa-3x red-text"></i>
+        <h5 class="font-weight-bold mt-3">Analytics</h5>
+        <p class="grey-text">Track how many things you can get done in an hour and see if you can beat your record. 
+        </p>
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-md-4">
+        <i class="fa fa-book fa-3x cyan-text"></i>
+        <h5 class="font-weight-bold mt-3">Tutorials</h5>
+        <p class="grey-text">No need for tutorials, the app is easy to use app, sser friendly design with simple yet powerful tools.
+        </p>
+    </div>
+    <!--Grid column-->
+
+    
+
+    <!--Grid column-->
+    <div class="col-md-4">
+        <i class="fa fa-clock-o fa-3x orange-text"></i>
+        <h5 class="font-weight-bold mt-3">Productivity</h5>
+        <p class="grey-text">Race the countdown clock as you make your list and get things done.
+        </p>
+
+    </div>
+    <!--Grid column-->
+
+ 
+    </div>
+    <!--Grid row-->
+
+   
+
+</section>
+<!--Section: Features v.1-->
+
+<div class="container-fluid" id="title">
+
+
+    
+    <h1>Get Stuff Done App</h1>
+    <div id="countTime"><button id='start'>Start</div>
+         <button class="btn btn-cyan" type="submit" id="add">Add</button>
+        <button type="button" class="btn btn-success"  onclick="increase()">Success</button>
+    <!--<button type="button" class="btn btn-danger"  onclick="decrease()">Failure</button>  -->
+         <input type="text" id="points">
+        
+</div>
+
+
+
+
+
+
+<div class="container-fluid" id="app">
+
+  <!--Panel-->
+<div class="card w-50" id="success">
+    <div class="card-body">
+        <h3 class="card-title">Way To Go!</h3>
+        <p class="card-text" style="color:white">You are well on your way to getting things done!</p>
+        
+    </div>
+</div>  
+
+<div class="card w-50" id="fail">
+    <div class="card-body">
+        <h3 class="card-title">Time is up!  </h3>
+        <p class="card-text" style="color:white">How many things did you get done!  Try it again!</p>
+        
+    </div>
+</div> 
+
+            <!-- Material input -->
+<div class="md-form">
+    <input placeholder="Add an Item" type="text" id="myInput" class="form-control"> 
+</div>
+
+<ul class="list-group" id="myUl">
+
+</ul>
+
+
+
+
+
+</div>
+
+       
+
+        <!--Third container-->
+        <div class="streak streak-md streak-photo" style="background-image:url('img/business.jpg')">
+            <div class="flex-center white-text blue-gradient-mask">
+                <div class="container py-3">
+
+                    <!--Section: Features v.4-->
+                    <section class="section feature-box wow fadeIn" data-wow-delay="0.2s">
+
+                        <!--Section heading-->
+                        <h1 class="py-5 my-5 white-text text-center wow fadeIn" data-wow-delay="0.2s"><strong class="font-bold">Get Stuff Done</strong> Today</h1>
+
+                        <!--Grid row-->
+                        <div class="row features-small mb-5">
+
+                            <!--Grid column-->
+                            <div class="col-md-12 col-lg-6">
+
+                                <!--Grid row-->
+                                <div class="row mb-5">
+                                    <div class="col-3">
+                                        <a type="button" class="btn-floating white btn-lg my-0"><i class="fa fa-tablet blue-text" aria-hidden="true"></i></a>
+                                    </div>
+                                    <div class="col-9">
+                                        <h5 class="feature-title white-text">Fully responsive</h5>
+                                        <p class="white-text">Use this app on your Mobile, Tablet, or Desktop</p>
+                                    </div>
+                                </div>
+                                <!--Grid row-->
+
+                                <!--Grid row-->
+                                <div class="row mb-5">
+                                    <div class="col-3">
+                                        <a type="button" class="btn-floating white btn-lg my-0"><i class="fa fa-level-up blue-text" aria-hidden="true"></i></a>
+                                    </div>
+                                    <div class="col-9">
+                                        <h5 class="feature-title white-text">Frequent updates</h5>
+                                        <p class="white-text">Stay tuned for many new additions and updates</p>
+                                    </div>
+                                </div>
+                                <!--Grid row-->
+
+                                <!--Grid row-->
+                                <div class="row mb-5">
+                                    <div class="col-3">
+                                        <a type="button" class="btn-floating white btn-lg my-0"><i class="fa fa-phone blue-text" aria-hidden="true"></i></a>
+                                    </div>
+                                    <div class="col-9">
+                                        <h5 class="feature-title white-text">Support</h5>
+                                        <p class="white-text">Plenty of help to get your started on getting stuff done today</p>
+                                    </div>
+                                </div>
+                                <!--Grid row-->
+
+                            </div>
+                            <!--Grid column-->
+
+
+                         
+
+                            <!--Grid column-->
+                            <div class="col-md-12 col-lg-6">
+
+                                <!--Grid row-->
+                                <div class="row mb-5">
+                                    <div class="col-3">
+                                        <a type="button" class="btn-floating white btn-lg my-0"><i class="fa fa-object-group blue-text" aria-hidden="true"></i></a>
+                                    </div>
+                                    <div class="col-9">
+                                        <h5 class="feature-title white-text">Simple Design</h5>
+                                        <p class="white-text">Designed to help you get things done </p>
+                                    </div>
+                                </div>
+                                <!--Grid row-->
+
+                                <!--Grid row-->
+                                <div class="row mb-5">
+                                    <div class="col-3">
+                                        <a type="button" class="btn-floating white btn-lg my-0"><i class="fa fa-rocket blue-text" aria-hidden="true"></i></a>
+                                    </div>
+                                    <div class="col-9">
+                                        <h5 class="feature-title white-text">Fast and powerful</h5>
+                                        <p class="white-text">Fast start and easy to use </p>
+                                    </div>
+                                </div>
+                                <!--Grid row-->
+
+                                <!--Grid row-->
+                                <div class="row mb-5">
+                                    <div class="col-3">
+                                        <a type="button" class="btn-floating white btn-lg my-0"><i class="fa fa-cloud-upload blue-text" aria-hidden="true"></i></a>
+                                    </div>
+                                    <div class="col-9">
+                                        <h5 class="feature-title white-text">In the Cloud</h5>
+                                        <p class="white-text">No need to log in or create an account, its all here on the site</p>
+                                    </div>
+                                </div>
+                                <!--Grid row-->
+
+                            </div>
+                            <!--Grid column-->
+
+                        </div>
+                        <!--Grid row-->
+
+                    </section>
+                    <!--/Section: Features v.4-->
+                </div>
+            </div>
+        </div>
+        <!--/Third container-->
+
+<!--Section: Testimonials v.2-->
+<section class="text-center pb-5">
+        
+    <!--Section heading-->
+    <h1 class="font-weight-bold h1 py-5">Testimonials</h1>
+    <!--Section description-->
+    
+    <!--Carousel Wrapper-->
+    <div id="carousel-example-1" class="carousel no-flex testimonial-carousel slide carousel-fade" data-ride="carousel" data-interval="false">
+    
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+            <!--First slide-->
+            <div class="carousel-item active">
+    
+                <div class="testimonial">
+                    <!--Avatar-->
+                    <div class="avatar mx-auto">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg" class="rounded-circle img-fluid" alt="First sample avatar image">
+                    </div>
+                    <!--Content-->
+                    <p>
+                        <i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur quae
+                        quaerat ad velit ab. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore cum accusamus eveniet
+                        molestias voluptatum inventore laboriosam labore sit, aspernatur praesentium iste impedit quidem dolor
+                        veniam.</p>
+    
+                    <h4>Anna Deynah</h4>
+                    <h6>Founder at ET Company</h6>
+    
+                    <!--Review-->
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star-half-full blue-text"> </i>
+                </div>
+    
+            </div>
+            <!--First slide-->
+    
+            <!--Second slide-->
+            <div class="carousel-item">
+    
+                <div class="testimonial">
+                    <!--Avatar-->
+                    <div class="avatar mx-auto">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(31).jpg" class="rounded-circle img-fluid" alt="Second sample avatar image">
+                    </div>
+                    <!--Content-->
+                    <p>
+                        <i class="fa fa-quote-left"></i> Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
+                        magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
+                        quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut
+                        labore. </p>
+    
+                    <h4>Maria Kate</h4>
+                    <h6>Photographer at Studio LA</h6>
+    
+                    <!--Review-->
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                </div>
+    
+            </div>
+            <!--Second slide-->
+    
+            <!--Third slide-->
+            <div class="carousel-item">
+    
+                <div class="testimonial">
+                    <!--Avatar-->
+                    <div class="avatar mx-auto">
+                        <img src="img/profile.jpg" class="rounded-circle img-fluid" alt="Third sample avatar image">
+                    </div>
+                    <!--Content-->
+                    <p>
+                        <i class="fa fa-quote-left"></i> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                        laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+    
+                    <h4>John Doe</h4>
+                    <h6>Front-end Developer in NY</h6>
+    
+                    <!--Review-->
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star blue-text"> </i>
+                    <i class="fa fa-star-o blue-text"> </i>
+                </div>
+    
+            </div>
+            <!--Third slide-->
+    
+        </div>
+        <!--Slides-->
+    
+        <!--Controls-->
+        <a class="carousel-item-prev left carousel-control" href="#carousel-example-1" role="button" data-slide="prev">
+            <span class="icon-prev" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-item-next right carousel-control" href="#carousel-example-1" role="button" data-slide="next">
+            <span class="icon-next" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+        <!--Controls-->
+    
+    </div>
+    <!--Carousel Wrapper-->
+    
+</section>
+<!--Section: Testimonials v.2-->
+
+        
+    </main>
+    <!--Main content-->
+
+
+    <!--Footer-->
+    <footer class="page-footer center-on-small-only blue-grey lighten-5 pt-0">
+
+        <div style="background-color: #5991fb;">
+            <div class="container">
+                <!--Grid row-->
+                <div class="row py-4 d-flex align-items-center">
+
+                    <!--Grid column-->
+                    <div class="col-12 col-md-5 text-left mb-md-0">
+                        <h6 class="mb-0 white-text text-center text-md-left"><strong>Get connected with us on social networks!</strong></h6>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-12 col-md-7 text-center text-md-right">
+                        <!--Facebook-->
+                        <a class="icons-sm fb-ic ml-0"><i class="fa fa-facebook white-text mr-lg-4"> </i></a>
+                        <!--Twitter-->
+                        <a class="icons-sm tw-ic"><i class="fa fa-twitter white-text mr-lg-4"> </i></a>
+                        <!--Google +-->
+                        <a class="icons-sm gplus-ic"><i class="fa fa-google-plus white-text mr-lg-4"> </i></a>
+                        <!--Linkedin-->
+                        <a class="icons-sm li-ic"><i class="fa fa-linkedin white-text mr-lg-4"> </i></a>
+                        <!--Instagram-->
+                        <a class="icons-sm ins-ic"><i class="fa fa-instagram white-text mr-lg-4"> </i></a>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+            </div>
+        </div>
+
+        <!--Footer Links-->
+        <div class="container mt-5 mb-4 text-center text-md-left">
+            <div class="row mt-3">
+
+                <!--First column-->
+                <div class="col-md-3 col-lg-4 col-xl-3 mb-r dark-grey-text">
+                    <h6 class="title font-bold"><strong>Company name</strong></h6>
+                    <hr class="blue mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit.</p>
+                </div>
+                <!--/.First column-->
+
+                <!--Second column-->
+                <!--
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-r dark-grey-text">
+                    <h6 class="title font-bold"><strong>Products</strong></h6>
+                    <hr class="blue mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p><a href="#!" class="dark-grey-text">MDBootstrap</a></p>
+                    <p><a href="#!" class="dark-grey-text">MDWordPress</a></p>
+                    <p><a href="#!" class="dark-grey-text">BrandFlow</a></p>
+                    <p><a href="#!" class="dark-grey-text">Bootstrap Angular</a></p>
+                </div>
+            -->
+                <!--/.Second column-->
+
+                <!--Third column-->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-r dark-grey-text">
+                    <h6 class="title font-bold"><strong>Useful links</strong></h6>
+                    <hr class="blue mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p><a href="#!" class="dark-grey-text">Get Stuff Done</a></p>
+                    <p><a href="#!" class="dark-grey-text">Back to the Top</a></p>
+                    <!--<p><a href="#!" class="dark-grey-text">Shipping Rates</a></p>  -->
+                    <!--<p><a href="#!" class="dark-grey-text">Help</a></p>  -->
+                </div>
+                <!--/.Third column-->
+
+                <!--Fourth column-->
+                <!--
+                <div class="col-md-4 col-lg-3 col-xl-3 dark-grey-text">
+                    <h6 class="title font-bold"><strong>Contact</strong></h6>
+                    <hr class="blue mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p><i class="fa fa-home mr-3"></i> New York, NY 10012, US</p>
+                    <p><i class="fa fa-envelope mr-3"></i> info@example.com</p>
+                    <p><i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
+                    <p><i class="fa fa-print mr-3"></i> + 01 234 567 89</p>
+                </div>
+            -->
+                <!--/.Fourth column-->
+
+            </div>
+        </div>
+        <!--/.Footer Links-->
+
+        <!-- Copyright-->
+        <div class="footer-copyright">
+            <div class="container-fluid">
+                © 2017 Copyright: <a href="https://www.getstuffdoneapp.com"><strong> getstuffdoneapp.com</strong></a>
+            </div>
+        </div>
+        <!--/.Copyright -->
+
+    </footer>
+    <!--/.Footer-->
+
+
+    <!-- SCRIPTS -->
+
+    <script src="script.js"></script>
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+    <script>
+        //Animation init
+        new WOW().init();
+
+        //Modal
+        $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').focus()
+        })
+
+        // Material Select Initialization
+        $(document).ready(function () {
+            $('.mdb-select').material_select();
+        });
+    </script>
+
+</body>
+
+</html>
